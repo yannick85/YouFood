@@ -1,0 +1,12 @@
+input[type="submit"]{
+	background:#3A3;
+	border:solid #191 2px;
+	border-radius:10px;
+	float:right;
+}
+body{
+	margin:16px;
+}
+h1{
+	color:#E0C636;
+}

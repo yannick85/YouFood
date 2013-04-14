@@ -1,0 +1,230 @@
+body{
+	background: url(image/body_bg.jpg) top repeat-x #BDBDBD;
+	font-family:Arial;
+}
+#header-wrapper{
+	
+}
+#logo{
+	width:200px;
+	height:150px;
+	float:left;
+	margin-right:15px;
+	background: url(image/logo.png) center center no-repeat;
+}
+#header{
+	background: #FFF;
+    border: 5px solid #33A;
+    border-radius: 10px 10px 10px 10px;
+   	float:left;
+   	width:825px;
+}
+.clear{
+	clear:both;
+}
+#big-wrapper{
+	width:1050px;
+	margin:0 auto;
+}
+#wrapper{
+	margin-bottom:20px;
+}
+#page{
+	padding:10px;
+	border-radius:10px;
+	border: 1px solid #FFF;
+	background:#EEE;
+	min-height:350px;
+}
+
+#footer{
+	margin-top:10px;
+}
+#footer .credits{
+	float:right;
+}
+/*breadcrumb*/
+#user-name , #restaurant-name , #zone-name{
+	font-weight:bold;
+	display:inline;
+	color:#5A5;
+}
+#warning{
+	border-bottom: 2px solid #DDDDDD;
+    padding-bottom: 5px;
+    color:#A22;
+}
+/*end breadcrumb*/
+/*MENU*/
+#menu{
+	max-height:120px;
+	margin:5px 10px;
+}
+
+#menu .menu-element{
+	display:inline-block;
+	width:80px;
+	height:120px;
+	margin-right:20px;
+}
+#menu .menu-element .menu-biglink{
+	color:#0055FF;
+	display:block;
+	width:80px;
+	height:100px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#494;
+	text-align:center;
+	font-size:16px;
+	background-position:0px 20px;
+	background-repeat:no-repeat;
+}
+#menu .menu-element .menu-littlelink{
+	float:right;
+	color:#9C2;
+	text-decoration:none;
+}
+
+#menu #menu-restaurant .menu-biglink{
+	background-image: url(image/menu_restaurant.jpg);	
+}
+#menu #menu-menu .menu-biglink{
+	background-image: url(image/menu_menu.jpg);	
+}
+#menu #menu-waiter .menu-biglink{
+	background-image: url(image/menu_waiter.jpg);	
+}
+#menu #menu-zone .menu-biglink{
+	background-image: url(image/menu_zone.jpg);	
+}
+#menu #menu-table .menu-biglink{
+	background-image: url(image/menu_table.jpg);	
+}
+#menu #menu-product .menu-biglink{
+	background-image: url(image/menu_product.jpg);	
+}
+#menu #menu-stat .menu-biglink{
+	background-image: url(image/menu_stat.jpg);	
+}
+#menu-stat{
+	float:right;
+}
+/*ENDMENU*/
+/*Choice zone*/
+.choice-zone-restaurant{
+	float:right;
+}
+.choice-zone-restaurant .choice-zone{
+	height:150px;
+}
+.choice-zone-restaurant .choice-objects{
+	height:130px;
+}
+.choice-zone-products{
+	float:left;
+}
+.choice-zone-starter , .choice-zone-principal, .choice-zone-desert{
+	margin-bottom:10px;
+}
+.choice-zone-starter .choice-objects, .choice-zone-principal .choice-objects, .choice-zone-desert .choice-objects{
+	height:200px;
+}
+.choice-zone-starter .choice-objects, .choice-zone-principal .choice-objects, .choice-zone-desert .choice-objects{
+	height:180px;
+}
+.choice-objects{
+	overflow:auto;
+}
+.choice-zone-label{
+	float:right;
+	font-size:11px;
+	color: #900;
+}
+.choice_zone{
+	border-radius:5px;
+	border:solid 1px #22F;
+	width:200px;
+	float:left;
+	padding:5px;
+}
+#choice_selected{
+	color:#C22;
+}
+.other_value_indicator{
+	color:#10E8A7;
+}
+.other_value_legend{
+	float:left;
+	clear:both;
+	color:#10E8A7;
+}
+.one_object{
+	border-bottom:1px solid #999;
+}
+.choice_button{
+	float:left;
+	margin: 30px 5px;
+	cursor:pointer;
+	width:20px;
+	height:17px;
+}
+.choice_in{
+	background: url(image/arrow-left.png);
+}
+.choice_out{
+	background: url(image/arrow-right.png);
+}
+/*END Choice zone*/
+.edit-icon{
+	background: url(image/icon/edit-l.png);
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-left:2px;
+}
+.delete-icon{
+	background: url(image/icon/delete-l.png);
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-left:2px;
+}
+.new-icon{
+	background: url(image/icon/plus-l.png);
+	float:right;
+	margin-top:3px;
+	width:16px;
+	height:16px;
+	margin-left:2px;
+}
+/*stat*/
+#stat-left{
+	width:50%;
+	float:left;
+}
+#stat-right{
+	float:right;
+	width:50%;
+}
+.stat-restaurant-content{
+	border:solid 1px #555;
+	background:#DDD;
+}
+.stat-restaurant-bestproducts{
+	float:left;
+	width:33%;
+}
+.stat-restaurant-title{
+	border:solid 1px #888;
+	background:#BBB;
+	padding:4px;
+}
+.stat-restaurant-content{
+	padding:4px;
+}
+.stat-restaurant-minus ,.stat-restaurant-plus{
+	float:right;
+	margin-right:4px;
+}
+/*endstat*/

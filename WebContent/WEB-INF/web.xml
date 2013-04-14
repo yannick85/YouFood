@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ <servlet>
+    <servlet-name>JerseyWebApplication</servlet-name>
+    <servlet-class>
+        com.sun.jersey.spi.container.servlet.ServletContainer
+    </servlet-class>
+    <init-param>
+        <param-name>
+            com.sun.jersey.config.property.packages
+        </param-name>
+        <param-value>com.rman.youfood.rest</param-value>
+    </init-param>
+</servlet>
+<servlet-mapping>
+    <servlet-name>JerseyWebApplication</servlet-name>
+    <url-pattern>/resources/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ServletIndex</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.IndexServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ServletIndex</servlet-name>
+    <url-pattern>/yf/index</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ServletIndex</servlet-name>
+    <url-pattern>/yf/index.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RestaurantServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.RestaurantServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RestaurantServlet</servlet-name>
+    <url-pattern>/yf/restaurant</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddRestaurantServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddRestaurantServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddRestaurantServlet</servlet-name>
+    <url-pattern>/yf/restaurant/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddWaiterServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddWaiterServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddWaiterServlet</servlet-name>
+    <url-pattern>/yf/restaurant/waiter/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddMenuServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddMenuServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddMenuServlet</servlet-name>
+    <url-pattern>/yf/menu/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ListMenuServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.ListMenuServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ListMenuServlet</servlet-name>
+    <url-pattern>/yf/menulist</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.MenuServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/yf/menu</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ModifyRestaurantsMenu</servlet-name>
+    <servlet-class>
+       com.rman.youfood.ajax.ModifyRestaurantsMenu
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ModifyRestaurantsMenu</servlet-name>
+    <url-pattern>/yf/ajax/modify/restaurant/menu</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddProductToMenu</servlet-name>
+    <servlet-class>
+       com.rman.youfood.ajax.AddProductToMenu
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProductToMenu</servlet-name>
+    <url-pattern>/yf/ajax/producttomenu/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RemoveProductFromMenu</servlet-name>
+    <servlet-class>
+       com.rman.youfood.ajax.RemoveProductFromMenu
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RemoveProductFromMenu</servlet-name>
+    <url-pattern>/yf/ajax/producttomenu/remove</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddZoneServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddZoneServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddZoneServlet</servlet-name>
+    <url-pattern>/yf/restaurant/zone/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ZoneServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.ZoneServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ZoneServlet</servlet-name>
+    <url-pattern>/yf/restaurant/zone</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddTableServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddTableServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddTableServlet</servlet-name>
+    <url-pattern>/yf/restaurant/zone/table/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.AddProductServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/yf/product/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ListProductServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.ListProductServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ListProductServlet</servlet-name>
+    <url-pattern>/yf/productlist</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.LogoutServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/yf/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteEntity</servlet-name>
+    <servlet-class>
+       com.rman.youfood.ajax.DeleteEntity
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteEntity</servlet-name>
+    <url-pattern>/yf/ajax/delete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>StatServlet</servlet-name>
+    <servlet-class>
+       com.rman.youfood.servlet.StatServlet
+    </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>StatServlet</servlet-name>
+    <url-pattern>/yf/stat</url-pattern>
+</servlet-mapping>
+
+<filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.rman.youfood.filter.Authentication</filter-class>
+</filter>
+
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/yf/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
